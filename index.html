@@ -12,10 +12,10 @@
 
     <header class="absolute top-0 left-0 right-0 px-6 lg:px-10 z-10 pt-6 lg:pt-8 flex justify-between items-center">
         <a href="#!">
-            <img src="/logo.svg" alt="" class="lg:w-44">
+            <img src="/images/logo.svg" alt="" class="lg:w-44">
         </a>
         <button @click="open = !open" :class="{ 'opacity-50': open }">
-            <img src="/hamburger.svg" alt="" class="md:hidden">
+            <img src="/icons/hamburger.svg" alt="" class="md:hidden">
         </button>
         <nav x-show="open" @click.outside="open = false" class="absolute left-0 right-0 px-6 mt-12 top-full sm:max-w-sm ml-auto md:hidden">
             <ul class="bg-white text-gray-700 text-center grid gap-6 text-lg pt-8 pb-10 relative">
@@ -58,8 +58,8 @@
     
     <section class="relative text-white bg-cyan-500">
         <picture>
-            <source media="(min-width: 768px)" srcset="/header-desktop.jpg">
-            <img src="/header.jpg" alt="" class="w-full h-[492px] md:h-[600px] lg:h-[700px] xl:h-[800px] object-cover">
+            <source media="(min-width: 768px)" srcset="/images/header-desktop.jpg">
+            <img src="/images/header.jpg" alt="" class="w-full h-[492px] md:h-[600px] lg:h-[700px] xl:h-[800px] object-cover">
         </picture>
         <div class="absolute top-0 left-0 right-0 pt-32 md:pt-40 lg:pt-48 xl:pt-64">
             <h1 class="uppercase bold text-4xl md:text-5xl lg:text-6xl text-center font-fraunces tracking-[0.2em] max-w-min mx-auto md:max-w-none font-black">We are creatives</h1>
@@ -69,8 +69,8 @@
 
     <section class="md:grid grid-cols-2 items-center max-w-max mx-auto">
         <picture class="md:order-last">
-            <source media="(min-width: 768px)" srcset="/transform-desktop.jpg">
-            <img src="/transform.jpg" alt="An egg on a yellow background." class="w-full h-[285px] sm:h-[450px] md:h-[356px] lg:h-auto lg:w-auto object-cover">
+            <source media="(min-width: 768px)" srcset="/images/transform-desktop.jpg">
+            <img src="/images/transform.jpg" alt="An egg on a yellow background." class="w-full h-[285px] sm:h-[450px] md:h-[356px] lg:h-auto lg:w-auto object-cover">
         </picture>
         <div class="py-16 md:py-8 md:pr-16 lg:p-0 text-center md:text-left px-6 lg:max-w-sm xl:max-w-md lg:mx-auto">
             <h2 class="font-fraunces text-3xl lg:text-4xl text-gray-900 font-black lg:leading-tight xl:max-w-sm">Transform your brand</h2>
@@ -84,8 +84,8 @@
 
     <section class="md:grid grid-cols-2 items-center max-w-max mx-auto">
         <picture class="flex-1">
-            <source media="(min-width: 768px)" srcset="/stand-out-desktop.jpg">
-            <img src="/stand-out.jpg" alt="A plastic wine glass on a red background." class="w-full h-[285px] sm:h-[450px] md:h-[356px] lg:h-auto lg:w-auto object-cover">
+            <source media="(min-width: 768px)" srcset="/images/stand-out-desktop.jpg">
+            <img src="/images/stand-out.jpg" alt="A plastic wine glass on a red background." class="w-full h-[285px] sm:h-[450px] md:h-[356px] lg:h-auto lg:w-auto object-cover">
         </picture>
         <div class="py-16 md:py-8 md:pr-16 lg:p-0 text-center md:text-left px-6 lg:max-w-sm xl:max-w-md lg:mx-auto">
             <h2 class="font-fraunces text-3xl lg:text-4xl text-gray-900 font-black lg:leading-tight">Stand out to the right audience</h2>
@@ -100,8 +100,8 @@
     <section class="md:grid grid-cols-2 lg:max-w-max mx-auto">
         <div class="text-center text-green-900 relative">
             <picture>
-                <source media="(min-width: 768px)" srcset="/graphic-design-desktop.jpg">
-                <img src="/graphic-design.jpg" alt="" class="w-full md:h-[356px] lg:h-auto lg:w-auto object-cover">
+                <source media="(min-width: 768px)" srcset="/images/graphic-design-desktop.jpg">
+                <img src="/images/graphic-design.jpg" alt="" class="w-full md:h-[356px] lg:h-auto lg:w-auto object-cover">
             </picture>
             <div class="absolute left-0 right-0 bottom-0 pb-16 md:pb-6 lg:pb-8 xl:pb-16 px-4">
                 <h2 class="font-fraunces text-3xl capitalize font-black">Graphic design</h2>
@@ -110,8 +110,8 @@
         </div>
         <div class="text-center text-sky-800 relative">
             <picture>
-                <source media="(min-width: 768px)" srcset="/photography-desktop.jpg">
-                <img src="/photography.jpg" alt="" class="w-full md:h-[356px] lg:h-auto lg:w-auto object-cover">
+                <source media="(min-width: 768px)" srcset="/images/photography-desktop.jpg">
+                <img src="/images/photography.jpg" alt="" class="w-full md:h-[356px] lg:h-auto lg:w-auto object-cover">
             </picture>
             <div class="absolute left-0 right-0 bottom-0 pb-16 md:pb-6 lg:pb-8 xl:pb-16 px-4">
                 <h2 class="font-fraunces text-3xl capitalize font-black">Photography</h2>
@@ -124,7 +124,7 @@
         <h2 class="font-fraunces font-black uppercase tracking-[0.2em] text-center text-gray-300 sm:text-xl">Client testimonials</h2>
         <div class="grid gap-16 lg:gap-8 pt-16 xl:pt-24 lg:grid-cols-3 max-w-6xl mx-auto px-6 lg:px-0">
             <article class="text-center">
-                <img src="/emily.jpg" alt="Emily, marketing director." class="rounded-full w-20 h-20 inline-block">
+                <img src="/images/emily.jpg" alt="Emily, marketing director." class="rounded-full w-20 h-20 inline-block">
                 <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
                 <address class=" not-italic capitalize pt-8 lg:pt-14">
                     <div class="font-fraunces text-lg font-black text-gray-900">Emily R.</div>
@@ -132,7 +132,7 @@
                 </address>
             </article>
             <article class="text-center">
-                <img src="/thomas.jpg" alt="Thomas, chief operating officer." class="rounded-full w-20 h-20 inline-block">
+                <img src="/images/thomas.jpg" alt="Thomas, chief operating officer." class="rounded-full w-20 h-20 inline-block">
                 <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
                 <address class=" not-italic capitalize pt-8 lg:pt-14">
                     <div class="font-fraunces text-lg font-black text-gray-900">Thomas S.</div>
@@ -140,7 +140,7 @@
                 </address>
             </article>
             <article class="text-center">
-                <img src="/jennie.jpg" alt="Jennie, business owner." class="rounded-full w-20 h-20 inline-block">
+                <img src="/images/jennie.jpg" alt="Jennie, business owner." class="rounded-full w-20 h-20 inline-block">
                 <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
                 <address class=" not-italic capitalize pt-8 lg:pt-14">
                     <div class="font-fraunces text-lg font-black text-gray-900">Jennie F.</div>
@@ -152,25 +152,25 @@
 
     <section class="grid grid-cols-2 md:grid-cols-4 max-w-max mx-auto">
         <picture>
-            <source media="(min-width: 768px)" srcset="/milk-bottles-desktop.jpg">
-            <img src="/milk-bottles.jpg" alt="3 Milk bottles with clouds." class="w-full">
+            <source media="(min-width: 768px)" srcset="/images/milk-bottles-desktop.jpg">
+            <img src="/images/milk-bottles.jpg" alt="3 Milk bottles with clouds." class="w-full">
         </picture>
         <picture>
-            <source media="(min-width: 768px)" srcset="/orange-desktop.jpg">
-            <img src="/orange.jpg" alt="Orange slice in a bowl." class="w-full">
+            <source media="(min-width: 768px)" srcset="/images/orange-desktop.jpg">
+            <img src="/images/orange.jpg" alt="Orange slice in a bowl." class="w-full">
         </picture>
         <picture>
-            <source media="(min-width: 768px)" srcset="/cone-desktop.jpg">
-            <img src="/cone.jpg" alt="Empty ice cream cone." class="w-full">
+            <source media="(min-width: 768px)" srcset="/images/cone-desktop.jpg">
+            <img src="/images/cone.jpg" alt="Empty ice cream cone." class="w-full">
         </picture>
         <picture>
-            <source media="(min-width: 768px)" srcset="/sugar-cubes-desktop.jpg">
-            <img src="/sugar-cubes.jpg" alt="Pile of sugar cubes." class="w-full">
+            <source media="(min-width: 768px)" srcset="/images/sugar-cubes-desktop.jpg">
+            <img src="/images/sugar-cubes.jpg" alt="Pile of sugar cubes." class="w-full">
         </picture>
     </section>
 
     <footer class="bg-teal-300 pt-14 sm:pt-20 pb-24 text-green-900 text-center">
-        <img src="/logo-green.svg" alt="Snunyside's logo." class="mx-auto w-40">
+        <img src="/images/logo-green.svg" alt="Snunyside's logo." class="mx-auto w-40">
         <nav class="text-lg pt-8">
             <ul class="inline-flex gap-12">
                 <li>
