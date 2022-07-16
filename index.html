@@ -8,13 +8,34 @@
     <script type="module" src="/main.js"></script>
     <link rel="stylesheet" href="/style.css">
   </head>
-  <body>
+  <body x-data="{ open: true }">
 
     <header class="absolute top-0 left-0 right-0 px-6 lg:px-10 z-10 pt-6 lg:pt-8 flex justify-between items-center">
         <a href="#!">
             <img src="/logo.svg" alt="" class="lg:w-44">
         </a>
-        <img src="/hamburger.svg" alt="" class="md:hidden">
+        <button @click="open = !open">
+            <img src="/hamburger.svg" alt="" class="md:hidden">
+        </button>
+        <nav x-show="open" @click.outside="open = false" class="absolute left-0 right-0 px-6 mt-12 top-full sm:max-w-sm ml-auto md:hidden">
+            <ul class="bg-white text-gray-700 text-center grid gap-6 text-lg pt-8 pb-10 relative">
+                <svg class="absolute bottom-full right-0" width="24" height="24" fill="none">
+                    <path d="M24 0v24H0L24 0Z" fill="#FFF"/>
+                </svg>
+                <li>
+                    <a href="#!">About</a>
+                </li>
+                <li>
+                    <a href="#!">Services</a>
+                </li>
+                <li>
+                    <a href="#!">Projects</a>
+                </li>
+                <li>
+                    <a href="#!" class="inline-block bg-yellow-500 text-gray-900 rounded-full py-4 px-7 font-fraunces uppercase text-base">Contact</a>
+                </li>
+            </ul>
+        </nav>
         <nav class="hidden md:block text-white text-lg">
             <ul class="inline-flex items-center gap-10 lg:gap-14">
                 <li>
