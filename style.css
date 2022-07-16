@@ -1,3 +1,28 @@
 @tailwind base;
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/barlow-semi-bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('/fonts/fraunces-bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('/fonts/fraunces-Bback.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 @tailwind components;
 @tailwind utilities;
