@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/LeeConnelly12/sunnyside-landing-page/master/public/images/screenshot.jpg)
+![Screenshot](https://raw.githubusercontent.com/LeeConnelly12/sunnyside-landing-page/master/public/images/screenshot.png)
 
 ### Links
 
