@@ -14,7 +14,7 @@
         <a href="#!">
             <img src="/images/logo.svg" alt="" class="lg:w-44">
         </a>
-        <button @click="open = !open" :class="{ 'opacity-50': open }">
+        <button @click="open = !open" :class="{ 'opacity-50': open }" aria-label="Click to open the mobile menu.">
             <img src="/icons/hamburger.svg" alt="" class="md:hidden">
         </button>
         <nav x-show="open" @click.outside="open = false" class="absolute left-0 right-0 px-6 mt-12 top-full sm:max-w-sm ml-auto md:hidden">
