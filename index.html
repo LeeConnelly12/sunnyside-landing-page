@@ -11,8 +11,8 @@
   <body x-data="{ open: false }">
 
     <header class="absolute top-0 left-0 right-0 px-6 lg:px-10 z-10 pt-6 lg:pt-8 flex justify-between items-center">
-        <a href="#!">
-            <img src="/images/logo.svg" alt="" class="lg:w-44">
+        <a href="#!" aria-label="View Sunnyside's landing page">
+            <img src="/images/logo.svg" alt="Sunnyside's logo" class="lg:w-44">
         </a>
         <button @click="open = !open" :class="{ 'opacity-50': open }" aria-label="Click to open the mobile menu.">
             <img src="/icons/hamburger.svg" alt="" class="md:hidden">
@@ -48,7 +48,7 @@
                     <a href="#!">Projects</a>
                 </li>
                 <li>
-                    <a href="#!" class="bg-white text-gray-900 font-fraunces uppercase py-4 px-8 rounded-full inline-block hover:bg-opacity-30 hover:text-white">
+                    <a href="#!" class="bg-white text-gray-900 font-fraunces uppercase py-4 px-8 rounded-full inline-block hover:bg-opacity-30 hover:text-white" aria-label="Contact us">
                         Contact
                     </a>
                 </li>
@@ -56,7 +56,7 @@
         </nav>
     </header>
     
-    <section class="relative text-white bg-cyan-500">
+    <section class="relative text-white bg-cyan-500" role="banner">
         <picture>
             <source media="(min-width: 768px)" srcset="/images/header-desktop.jpg">
             <img src="/images/header.jpg" alt="" class="w-full h-[492px] md:h-[600px] lg:h-[700px] xl:h-[800px] object-cover">
@@ -96,92 +96,95 @@
                 </a>
             </div>
         </section>
+        <section class="md:grid grid-cols-2 lg:max-w-max mx-auto">
+            <div class="text-center text-green-900 relative">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="/images/graphic-design-desktop.jpg">
+                    <img src="/images/graphic-design.jpg" alt="" class="w-full md:h-[356px] lg:h-auto lg:w-auto object-cover">
+                </picture>
+                <div class="absolute left-0 right-0 bottom-0 pb-16 md:pb-6 lg:pb-8 xl:pb-16 px-4">
+                    <h2 class="font-fraunces text-3xl capitalize font-black">Graphic design</h2>
+                    <p class="pt-8 md:pt-4 lg:pt-8 leading-relaxed max-w-[352px] mx-auto">Great design makes you memorable. We deliver artowkr that underscores your brand message and capture spotential clients' attention.</p>
+                </div>
+            </div>
+            <div class="text-center text-sky-800 relative">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="/images/photography-desktop.jpg">
+                    <img src="/images/photography.jpg" alt="" class="w-full md:h-[356px] lg:h-auto lg:w-auto object-cover">
+                </picture>
+                <div class="absolute left-0 right-0 bottom-0 pb-16 md:pb-6 lg:pb-8 xl:pb-16 px-4">
+                    <h2 class="font-fraunces text-3xl capitalize font-black">Photography</h2>
+                    <p class="pt-8 md:pt-4 lg:pt-8 leading-relaxed max-w-[352px] mx-auto">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </div>
+        </section>
+        <section class="pt-14 sm:pt-20 xl:pt-40 pb-20 sm:pb-24 xl:pb-48">
+            <h2 class="font-fraunces font-black uppercase tracking-[0.2em] text-center text-gray-300 sm:text-xl">Client testimonials</h2>
+            <div class="grid gap-16 lg:gap-8 pt-16 xl:pt-24 lg:grid-cols-3 max-w-6xl mx-auto px-6 lg:px-0">
+                <article class="text-center">
+                    <img src="/images/emily.jpg" alt="Emily, marketing director." class="rounded-full w-20 h-20 inline-block">
+                    <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    <address class=" not-italic capitalize pt-8 lg:pt-14">
+                        <div class="font-fraunces text-lg font-black text-gray-900">Emily R.</div>
+                        <div class="text-gray-300 text-sm pt-2">Marketing Director</div>
+                    </address>
+                </article>
+                <article class="text-center">
+                    <img src="/images/thomas.jpg" alt="Thomas, chief operating officer." class="rounded-full w-20 h-20 inline-block">
+                    <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+                    <address class=" not-italic capitalize pt-8 lg:pt-14">
+                        <div class="font-fraunces text-lg font-black text-gray-900">Thomas S.</div>
+                        <div class="text-gray-300 text-sm pt-2">Chief operating officer</div>
+                    </address>
+                </article>
+                <article class="text-center">
+                    <img src="/images/jennie.jpg" alt="Jennie, business owner." class="rounded-full w-20 h-20 inline-block">
+                    <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    <address class=" not-italic capitalize pt-8 lg:pt-14">
+                        <div class="font-fraunces text-lg font-black text-gray-900">Jennie F.</div>
+                        <div class="text-gray-300 text-sm pt-2">Business owner</div>
+                    </address>
+                </article>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 md:grid-cols-4 max-w-max mx-auto">
+            <picture>
+                <source media="(min-width: 768px)" srcset="/images/milk-bottles-desktop.jpg">
+                <img src="/images/milk-bottles.jpg" alt="3 Milk bottles with clouds." class="w-full">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)" srcset="/images/orange-desktop.jpg">
+                <img src="/images/orange.jpg" alt="Orange slice in a bowl." class="w-full">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)" srcset="/images/cone-desktop.jpg">
+                <img src="/images/cone.jpg" alt="Empty ice cream cone." class="w-full">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)" srcset="/images/sugar-cubes-desktop.jpg">
+                <img src="/images/sugar-cubes.jpg" alt="Pile of sugar cubes." class="w-full">
+            </picture>
+        </section>
     </main>
-
-    <section class="md:grid grid-cols-2 lg:max-w-max mx-auto">
-        <div class="text-center text-green-900 relative">
-            <picture>
-                <source media="(min-width: 768px)" srcset="/images/graphic-design-desktop.jpg">
-                <img src="/images/graphic-design.jpg" alt="" class="w-full md:h-[356px] lg:h-auto lg:w-auto object-cover">
-            </picture>
-            <div class="absolute left-0 right-0 bottom-0 pb-16 md:pb-6 lg:pb-8 xl:pb-16 px-4">
-                <h2 class="font-fraunces text-3xl capitalize font-black">Graphic design</h2>
-                <p class="pt-8 md:pt-4 lg:pt-8 leading-relaxed max-w-[352px] mx-auto">Great design makes you memorable. We deliver artowkr that underscores your brand message and capture spotential clients' attention.</p>
-            </div>
-        </div>
-        <div class="text-center text-sky-800 relative">
-            <picture>
-                <source media="(min-width: 768px)" srcset="/images/photography-desktop.jpg">
-                <img src="/images/photography.jpg" alt="" class="w-full md:h-[356px] lg:h-auto lg:w-auto object-cover">
-            </picture>
-            <div class="absolute left-0 right-0 bottom-0 pb-16 md:pb-6 lg:pb-8 xl:pb-16 px-4">
-                <h2 class="font-fraunces text-3xl capitalize font-black">Photography</h2>
-                <p class="pt-8 md:pt-4 lg:pt-8 leading-relaxed max-w-[352px] mx-auto">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="pt-14 sm:pt-20 xl:pt-40 pb-20 sm:pb-24 xl:pb-48">
-        <h2 class="font-fraunces font-black uppercase tracking-[0.2em] text-center text-gray-300 sm:text-xl">Client testimonials</h2>
-        <div class="grid gap-16 lg:gap-8 pt-16 xl:pt-24 lg:grid-cols-3 max-w-6xl mx-auto px-6 lg:px-0">
-            <article class="text-center">
-                <img src="/images/emily.jpg" alt="Emily, marketing director." class="rounded-full w-20 h-20 inline-block">
-                <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-                <address class=" not-italic capitalize pt-8 lg:pt-14">
-                    <div class="font-fraunces text-lg font-black text-gray-900">Emily R.</div>
-                    <div class="text-gray-300 text-sm pt-2">Marketing Director</div>
-                </address>
-            </article>
-            <article class="text-center">
-                <img src="/images/thomas.jpg" alt="Thomas, chief operating officer." class="rounded-full w-20 h-20 inline-block">
-                <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
-                <address class=" not-italic capitalize pt-8 lg:pt-14">
-                    <div class="font-fraunces text-lg font-black text-gray-900">Thomas S.</div>
-                    <div class="text-gray-300 text-sm pt-2">Chief operating officer</div>
-                </address>
-            </article>
-            <article class="text-center">
-                <img src="/images/jennie.jpg" alt="Jennie, business owner." class="rounded-full w-20 h-20 inline-block">
-                <p class="text-lg pt-8 lg:pt-12 text-gray-800 max-w-sm mx-auto">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-                <address class=" not-italic capitalize pt-8 lg:pt-14">
-                    <div class="font-fraunces text-lg font-black text-gray-900">Jennie F.</div>
-                    <div class="text-gray-300 text-sm pt-2">Business owner</div>
-                </address>
-            </article>
-        </div>
-    </section>
-
-    <section class="grid grid-cols-2 md:grid-cols-4 max-w-max mx-auto">
-        <picture>
-            <source media="(min-width: 768px)" srcset="/images/milk-bottles-desktop.jpg">
-            <img src="/images/milk-bottles.jpg" alt="3 Milk bottles with clouds." class="w-full">
-        </picture>
-        <picture>
-            <source media="(min-width: 768px)" srcset="/images/orange-desktop.jpg">
-            <img src="/images/orange.jpg" alt="Orange slice in a bowl." class="w-full">
-        </picture>
-        <picture>
-            <source media="(min-width: 768px)" srcset="/images/cone-desktop.jpg">
-            <img src="/images/cone.jpg" alt="Empty ice cream cone." class="w-full">
-        </picture>
-        <picture>
-            <source media="(min-width: 768px)" srcset="/images/sugar-cubes-desktop.jpg">
-            <img src="/images/sugar-cubes.jpg" alt="Pile of sugar cubes." class="w-full">
-        </picture>
-    </section>
 
     <footer class="bg-teal-300 pt-14 sm:pt-20 pb-24 text-green-900 text-center">
         <img src="/images/logo-green.svg" alt="Snunyside's logo." class="mx-auto w-40">
         <nav class="text-lg pt-8" aria-label="footer-navigation">
             <ul class="inline-flex gap-12">
                 <li>
-                    <a href="#!" class="capitalize hover:text-white">About</a>
+                    <a href="#!" class="capitalize hover:text-white" aria-label="Learn more about Sunnyside.">
+                        About
+                    </a>
                 </li>
                 <li>
-                    <a href="#!" class="capitalize hover:text-white">Services</a>
+                    <a href="#!" class="capitalize hover:text-white" aria-label="View the services Sunnyside provides.">
+                        Services
+                    </a>
                 </li>
                 <li>
-                    <a href="#!" class="capitalize hover:text-white">Projects</a>
+                    <a href="#!" class="capitalize hover:text-white" aria-label="View Sunnyside's projects.">
+                        Projects
+                    </a>
                 </li>
             </ul>
         </nav>
