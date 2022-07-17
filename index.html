@@ -17,7 +17,7 @@
         <button @click="open = !open" :class="{ 'opacity-50': open }" aria-label="Click to open the mobile menu.">
             <img src="/icons/hamburger.svg" alt="" class="md:hidden">
         </button>
-        <nav x-show="open" @click.outside="open = false" class="absolute left-0 right-0 px-6 mt-12 top-full sm:max-w-sm ml-auto md:hidden">
+        <nav x-show="open" @click.outside="open = false" class="absolute left-0 right-0 px-6 mt-12 top-full sm:max-w-sm ml-auto md:hidden" aria-label="mobile-navigation">
             <ul class="bg-white text-gray-700 text-center grid gap-6 text-lg pt-8 pb-10 relative">
                 <svg class="absolute bottom-full right-0" width="24" height="24" fill="none">
                     <path d="M24 0v24H0L24 0Z" fill="#FFF"/>
@@ -36,7 +36,7 @@
                 </li>
             </ul>
         </nav>
-        <nav class="hidden md:block text-white text-lg">
+        <nav class="hidden md:block text-white text-lg" aria-label="desktop-navigation">
             <ul class="inline-flex items-center gap-10 lg:gap-14">
                 <li>
                     <a href="#!">About</a>
@@ -172,7 +172,7 @@
 
     <footer class="bg-teal-300 pt-14 sm:pt-20 pb-24 text-green-900 text-center">
         <img src="/images/logo-green.svg" alt="Snunyside's logo." class="mx-auto w-40">
-        <nav class="text-lg pt-8">
+        <nav class="text-lg pt-8" aria-label="footer-navigation">
             <ul class="inline-flex gap-12">
                 <li>
                     <a href="#!" class="capitalize hover:text-white">About</a>
